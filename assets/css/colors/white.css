@@ -1,0 +1,148 @@
+@media (max-width:1195px){
+a, .text-color {
+    color: white;
+}
+}
+@media (min-width:1196px){
+a, .text-color {
+    color: white;
+}
+}
+.color-bg {
+    background-color: #e9194d;
+}
+
+ 
+.btn-color-ghost {
+    background: transparent;
+    color: white;
+    border-color: white;
+}
+
+.btn-color:hover {
+    background: #ffffff;
+    color: #e9194d;
+    border-color: #e9194d;
+}
+
+.btn-pink {
+    background: #e9194d;
+    color: white;
+    border-color: #e9194d;
+}
+
+.btn-pink:hover,.btn-green:hover, .btn-color-ghost:hover {
+    background: white;
+    color: #e9194d;
+    border-color: #e9194d;
+}
+
+.btn-green {
+    background: #2fbd39;
+    color: white;
+    border-color: #2fbd39;
+}
+
+
+.btn-white {
+    color: #e9194d;
+}
+
+.navbar-nav>li>a.btn-signup {
+    background: #e9194d;
+    color: #ffffff;
+    border-color: #e9194d;
+}
+
+.navbar-nav>li>a.btn-signup:hover, .navbar-nav>li>a.btn-signup:focus {
+    background: #ffffff;
+    color: #e9194d;
+    border-color: #ffffff;
+}
+ 
+.solid-bg{
+    background:none;
+    background-color: #e9194d;
+}
+
+.navbar-nav>li>a.btn-white{
+    color: #e9194d;
+}
+ 
+.type .hero-section span{
+    background-color: #e9194d;
+}
+ 
+.form-control {
+    border: 2px solid white;
+}
+
+.form-control::-webkit-input-placeholder { /* Chrome */
+  color: white;
+}
+.form-control:-ms-input-placeholder { /* IE 10+ */
+  color: white;
+}
+.form-control::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+  opacity: 1;
+}
+.form-control:-moz-placeholder { /* Firefox 4 - 18 */
+  color: white;
+  opacity: 1;
+}
+ 
+.icon-lg:hover, .icon-lg:focus, .icon-sm:hover, .icon-sm:focus {
+    color:#e9194d;
+}
+
+ 
+.preloader{
+    background-color: #0e76bc;	
+}
+
+ 
+.is-scrolling .navbar-nav>.active>a, .is-scrolling .navbar-nav>.active>a:hover, .is-scrolling .navbar-nav>.active>a:focus {
+    color: #e9194d;
+    background-color: transparent;
+}
+
+ 
+.login .modal-header .modal-title span{
+    font-weight: 400;
+    color: #e9194d;
+}
+
+ 
+.pricing-tab {
+    border: 3px solid #9aa9aa;
+}
+
+.pricing-tab h4 {
+    border-bottom: 3px solid #9aa9aa;
+}
+
+.pricing-tab .ribbon .popular{
+    background-color: #e9194d;
+}
+
+ 
+.team-img .img-icons span i:hover{
+    color: #e9194d;
+}
+
+ 
+.signup-divider .form-control:focus{
+    border-color: #e9194d;
+}
+
+.fast-reg .form-control:focus{
+    background-color: #e9194d;
+    border-color: #e9194d;
+    box-shadow: none;
+}
+
+ 
+.footer a:hover{
+    color: #e9194d;
+}

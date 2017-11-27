@@ -1,0 +1,96 @@
+.serviceBox .service-icon a{
+    border-bottom: 1px solid #d5d7d9;
+    display: inline-block;
+    width: 100%;
+    overflow-y: hidden;
+    position: relative;
+}
+.serviceBox .service-icon a > span{
+    width: 75px;
+    height:75px;
+    background: #26282b;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    transform: rotate(60deg);
+    position: relative;
+    left:22px;
+    top:12px;
+    transition:all 300ms ease-in-out 0s;
+}
+.serviceBox:hover .service-icon a > span{
+    background: #FBC02D;
+}
+.serviceBox .service-icon a > span i{
+    font-size: 30px;
+    color:#fff;
+    transform: rotate(-60deg);
+    line-height: 72px;
+}
+.serviceBox .service-content h3{
+    color:#26282b;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.serviceBox .service-content p{
+    color:#212121;
+    line-height: 25px;
+}
+@media screen and (max-width: 990px){
+    .serviceBox{
+        margin-bottom: 25px;
+    }
+}
+
+
+/*---------------------------*/
+.serviceBox2 .service-icon2 a{
+    border-bottom: 1px solid white;
+    display: inline-block;
+    width: 100%;
+    overflow-y: hidden;
+    position: relative;
+}
+.serviceBox2 .service-icon2 a > span{
+    width: 75px;
+    height:75px;
+    background: white;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    transform: rotate(60deg);
+    position: relative;
+    left:22px;
+    top:12px;
+    transition:all 300ms ease-in-out 0s;
+}
+.serviceBox2:hover .service-icon2 a > span{
+    background: #023067;
+}
+.serviceBox2:hover .service-icon2 a > span>i{
+	color:white;
+}
+.serviceBox2 .service-icon2 a > span i{
+    font-size: 30px;
+    color:#01366c;
+    transform: rotate(-60deg);
+    line-height: 72px;
+}
+.serviceBox2 .service-content2 h3{
+    color:white;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.serviceBox2 .service-content2 p{
+    color:white;
+    line-height: 25px;
+}
+@media screen and (max-width: 990px){
+    .serviceBox2{
+        margin-bottom: 25px;
+    }
+}

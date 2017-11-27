@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="CrowdCapital 1.1">
+    <serverData>
+      <paths name="CrowdCapital 1.1">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="medium" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
