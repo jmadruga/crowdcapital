@@ -43,62 +43,7 @@
 					</div>						
 			   </div>
 			<div class="row" align="center">
-                <div class="col-md-3 col-sm-6">  
-					<div class=" serviceBox" >
-						<p style="height: 110px;"><img src="assets/images/logos/botbrazil.png" /><br /><br />
-						<h3 class="title">Analista de Dados <br /> Bot Brazil</h3>						
-						<p style="text-align:left;font-size:12px;" ><b>Início:</b> Imediato <br />
-						<b>Tipo: </b>Integral (48 h/semanais)<br />
-						<b>Local:</b> Sumaré/SP 
-						<h4><b>2.500,00</b></h4></p>
-						<p style="font-size:10px;margin-bottom: 52px; margin-top: -10px;" >Remuneração </p>
-						<a href="index#apliquese" style="right: 13%; left:15%" class="read-more">CANDIDATAR-SE</a>
-					</div>									 
-                </div>
-
-                <div class="col-md-3 col-sm-6"> 
-					<div class=" serviceBox" >
-						<p style="height: 110px;"><img src="assets/images/logos/construnova.png"/><br /><br />
-						<h3 class="title">Gerente de Vendas <br /> Construnova</h3>						
-						<p style="text-align:left; font-size:12px;" ><b>Início:</b> Em 6 meses <br />
-						<b>Tipo: </b>Flexível (10 horas semanais)<br />
-						<b>Local:</b> Home Office (Brasil)
-						<h4><b>A DEFINIR</b></h4></p>
-						<p style="font-size:10px;margin-bottom: 52px; margin-top: -10px;" >Remuneração </p>
-						<a href="index#apliquese" style="right: 13%; left:15%" class="read-more">CANDIDATAR-SE</a>
-					</div>			
-                </div>
-
-                                <div class="col-md-3 col-sm-6">  
-					<div class=" serviceBox" >
-						<p style="height: 100px;"><img style="height: 158px;" src="assets/images/logos/puremeet.png" /><br /><br />
-						<h3 class="title" style="padding: 0;margin: 0;margin-top: 44px;">Analista de Dados <br /> Pure Meet</h3>						
-						<p style="text-align:left;font-size:12px;" ><br /><b>Início:</b> Imediato <br />
-						<b>Tipo: </b>Integral (48 h/semanais)<br />
-						<b>Local:</b> Sumaré/SP 
-						<h4  style="    margin: -7px;"><b>2.500,00</b></h4></p>
-						<p style="font-size:10px;margin-bottom: 52px; margin-top: -10px;" >Remuneração </p>
-						<a href="index#apliquese" style="right: 13%; left:15%" class="read-more">CANDIDATAR-SE</a>
-					</div>									 
-                </div>
-
-                <div class="col-md-3 col-sm-6"> 
-					<div class=" serviceBox" >
-						<p style="height: 110px;"><img src="assets/images/logos/talk2.png"  /><br /><br />
-						<h3 class="title">Gerente de Vendas <br /> Talk 2</h3>						
-						<p style="text-align:left; font-size:12px;" ><b>Início:</b> Em 6 meses <br />
-						<b>Tipo: </b>Flexível (10 horas semanais)<br />
-						<b>Local:</b> Home Office (Brasil)
-						<h4><b>A DEFINIR</b></h4></p>
-						<p style="font-size:10px;margin-bottom: 52px; margin-top: -10px;" >Remuneração </p>
-						<a href="index#apliquese" style="right: 13%; left:15%" class="read-more">CANDIDATAR-SE</a>
-					</div>			
-                </div>
-			</div>
- 			 <div class="row" style="font-size: 12px; padding: 32px;">
-				<div class="col-md-12">
-				 *O CrowdCapital está em fase de pré lançamento. Informações meramente ilustrativas.
-				</div>
+              
 			 </div>
 
         </header>
