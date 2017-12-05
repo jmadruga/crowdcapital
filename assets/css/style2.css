@@ -73,10 +73,21 @@ box-shadow: 0px 2px 27px -7px rgba(0,0,0,0.75);
 	min-height:380px;
  
 }
+
+.serviceBox_saibaMais{
+    background-color:white;
+    text-align: center;
+    -webkit-box-shadow: 0px 2px 27px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 27px -7px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 27px -7px rgba(0,0,0,0.75);
+    position: relative;
+    transition: all 0.4s ease-in-out 0s;
+    min-height: 290px;
+}
 #thumbnails{
 	    margin-left: -20px;
 }
-.serviceBox:hover{
+.serviceBox:hover, .serviceBox_saibaMais:hover{
     transform: scale(1.05, 1.05);
 }
 .serviceBox .service-icon{
@@ -413,9 +424,9 @@ ul {
     color: white;
 }
  
-:root .overlay {
-    filter: none\0/IE9;
-}
+/*:root .overlay {
+    filter: none0/IE9;
+}*/
  
 .form-group {
     margin-bottom: 25px;
@@ -476,7 +487,7 @@ ul {
 		position: relative;
 }
 	}
-}
+
 
  
 .vmiddle{
@@ -551,7 +562,7 @@ ul {
     }
 }
 
- /
+
 h1, h2, h3, h4 {
  	font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
  	margin: 0 0 0px;
@@ -617,7 +628,8 @@ p {
 }
 
 @font-face{
-font-family:Gotham;src:url(../fonts/Gotham Bold Regular.ttf);}
+font-family:Gotham;src:url("../fonts/Gotham Bold Regular.ttf");
+}
 
 @font-face{
 	font-family:GothamLight;
@@ -628,9 +640,9 @@ font-family:Gotham;src:url(../fonts/Gotham Bold Regular.ttf);}
 src:url("../fonts/PoetsenOne-Regular.ttf");
 }
 
-@font-face{font-family:GothamBlack;
-src:url("../fonts/Gotham Black Regular.ttf");
-}
+/*@font-face{font-family:GothamBlack;*/
+/*src:url("../fonts/Gotham Black Regular.ttf");*/
+/*}*/
 
 @font-face{font-family:GothamBold;
 src:url("../fonts/Gotham Bold Regular.ttf");
@@ -780,7 +792,7 @@ margin-top: 50px
 	font-size: 25px;
     line-height: 34px;
 }
-}
+
 /*------------------------------------------*/
 /*   Navbar General Settings
 /*------------------------------------------*/
@@ -981,4 +993,29 @@ nav{
     font-size:13px;
     line-height: 16px;
     text-align: center;
-} 
+}
+.box_medium{
+  padding: 0px;
+  height: 420px;
+}
+
+.texto_box{
+    padding: 5px;
+}
+
+.box_medium h4{
+    text-align: justify;
+    min-height: 95px;
+}
+
+.box_medium a, .box_small a{
+    color:#0e76bc;
+}
+.box_medium img{
+    height: 215px;
+    width: 100%;
+}
+.box_small img{
+    height: 145px;
+    width: 100%;
+}

@@ -9,6 +9,7 @@ require './vendor/autoload.php';
 $xml = file_get_contents('https://medium.com/feed/@felipeflat/');
 
 $xml=simplexml_load_string($xml, null, LIBXML_NOCDATA);
+$i = 0;
 foreach ($xml->channel->item as $item) {
     $title = (string) $item->title;
     $content = $item->children('content', 'http://purl.org/rss/1.0/modules/content/');
@@ -17,10 +18,14 @@ foreach ($xml->channel->item as $item) {
     libxml_use_internal_errors(true);
     $dom->loadHTML($html_string);
     libxml_clear_errors();
-    $texto = strip_tags($html_string);
     preg_match('/<figure>(.*?)<\/figure>/s',$html_string,$match);
     preg_match('\'src="([^"]+)"\'',$match[1], $img);
-    $imagem = $img[1];
+
+    $medium[$i]['title'] =(string) $item->title;
+    $medium[$i]['image'] = $img[1];
+    $medium[$i]['texto'] = strip_tags($html_string);
+    $medium[$i]['link']  =(string) $item->link;
+    $i++;
 }
 
 ?>
@@ -29,34 +34,94 @@ foreach ($xml->channel->item as $item) {
 <html lang="pt-br">
 <head>
     <title>CrowdCapital - Saiba mais</title>
-    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
-
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-
+    <!--CSS e metas -->
+    <?php require_once "assets/includes/head.php" ?>
 
 </head>
 <body>
-<header>
-    <div class="container">
-        <div class="row" style="margin-top:1%;">
-            <div class="col-md-12 col-xs-10 col-sm-10">
-                <a href="/" class="  scrollto" title="Crowd Capital">
-                    <img  style="height:60px" src="assets/images/logos/logoccallcolor.png" alt="Logo">
-                </a>
+
+<content>
+
+</content>
+    <!--Menu mobile-->
+    <?php require_once "assets/includes/menu_mobile.php" ?>
+<!--Menu default-->
+<?php require_once "assets/includes/menu_default.php" ?>
+        <header>
+            <div class="header">
+                <div class="col-md-12">
+                    <h2  style="text-align: left;">Saiba Mais</h2>
+                    <p>Que legal que você se interessou em saber mais sobre o CrowdCapital. Aqui vão alguns textos que
+                    com certeza irão te ajudar a entender melhor o nosso propósito.</p>
+                </div>
             </div>
-        </div>
-    </div>
+        </header>
+        <content class="content" id="main">
 
-</header>
-<section id="content">
-    <script async src="https://static.medium.com/embed.js"></script><a class="m-story" href="https://medium.com/@felipeflat/o-apoio-do-governo-estados-liberais-vs-bem-estar-social-579bd588ed0c">O apoio do Governo: Estados liberais vs Bem-estar social</a>
-</section>
-<footer>
 
-</footer>
+            <div class="container" style="z-index:1;">
+                <div class="row">
+                    <?php
+                        for($i=0;$i<3;$i++){
+                            echo '
+                            <div class="col-md-4">
+                                <div class="serviceBox box_medium" id="box'.$i.'">
+                                    <a href="'.$medium[$i]['link'].'" target="_blank">
+                                        <img src="'.$medium[$i]['image'].'" class="img_chamada" />
+                                    </a>
+                                    <div class="row texto_box">
+                                        <div class="col-md-12">
+                                            <h4>'.$medium[$i]['title'].'</h4>
+                                            <p>'.substr($medium[$i]['texto'],0,81).'
+                                            ...
+                                            <a href="'.$medium[$i]['link'].'" target="_blank">Leia Mais</a></p>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                            ';
+                        }
 
+                        ?>
+                </div>
+
+
+                    <?php
+                        for($j=3;$j<count($medium);$j++) {
+                            if(isset($medium[$i])) {
+                                echo ' <div class="row" style="margin: 30px;">';
+                                for ($f = 0; $f <= 3; $f++) {
+                                    if (isset($medium[$i])) {
+                                        echo '
+                                        <div class="col-md-3">
+                                            <div class="serviceBox_saibaMais box_small" id="box' . $i . '">
+                                                <a href="'.$medium[$i]['link'].'" target="_blank">
+                                                    <img src="' . $medium[$i]['image'] . '" class="img_chamada" />
+                                                </a>
+                                                <div class="row texto_box">
+                                                    <div class="col-md-12">
+                                                        <b>' . $medium[$i]['title'] . '</b>
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        ';
+                                    }
+                                    $i++;
+                                }
+                                echo '</div>';
+                            }
+                        }
+                    ?>
+                
+
+            </div>
+        </content>
+
+    <!--Footer-->
+    <?php require_once "assets/includes/footer.php" ?>
+    <!--Scripts-->
+    <?php require_once "assets/includes/scripts.php" ?>
 </body>
 </html>
