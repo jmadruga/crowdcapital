@@ -56,7 +56,7 @@
 				<div class="row vmiddle" style="z-index:1;">
 					<div class="col-md-12">
 						<div class="row" id="banner">
-							<div class="col-md-10" style="margin-top: 87px;"> 
+							<div class="col-md-10" style="padding-top: 300px;">
 								<h3 style="font-family:GothamLight;color:white">Você é <span style="font-family:GothamBold;color:white">feliz hoje? </span></h3>
 								<p style="color:white">Imagine ser dono dos negócios mais promissores do mundo?<br />  Sem caridade ou governo, apenas com seu trabalho, <br />nas suas horas ociosas, com o que fizer de melhor.
 						<div class="row" style="padding: 5px;">
@@ -65,7 +65,7 @@
 							</div>
 						</div>
 							</div>
-							<div class="col-md-2" style="z-index:1;">
+							<div class="col-md-2" style="    margin-top: 330px;z-index:1;">
 								<img  src="assets/images/logos/objetivos_sustentavel.png" style="margin-top: -13px; height: 153px;" alt="" class="img-responsive  center-block" />
 							</div>
 						</div>			
@@ -91,7 +91,8 @@
 											<a href="incubadora" class="read-more">SABER MAIS</a>
 										</div>
 									</li>
-																		<li>
+									
+									<li>
 										<div class="serviceBox">
 											<div><img src="assets/images/icons/tempo-ocioso.png" style=" margin-top:10px; height:170px" alt="" class="img-responsive  center-block"  /></div>
 											<h3 class="title">Use seu tempo ocioso e habilidades para criar patrimônio <br /></h3><br />
