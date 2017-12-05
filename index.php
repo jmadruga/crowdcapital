@@ -65,7 +65,7 @@
 							</div>
 						</div>
 							</div>
-							<div class="col-md-2" style="    margin-top: 330px;z-index:1;">
+							<div class="col-md-2" style="margin-top: 330px;z-index:1;">
 								<img  src="assets/images/logos/objetivos_sustentavel.png" style="margin-top: -13px; height: 153px;" alt="" class="img-responsive  center-block" />
 							</div>
 						</div>			

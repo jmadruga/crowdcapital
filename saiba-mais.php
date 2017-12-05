@@ -48,77 +48,73 @@ foreach ($xml->channel->item as $item) {
     <?php require_once "assets/includes/menu_mobile.php" ?>
 <!--Menu default-->
 <?php require_once "assets/includes/menu_default.php" ?>
-        <header>
-            <div class="header">
-                <div class="col-md-12">
-                    <h2  style="text-align: left;">Saiba Mais</h2>
-                    <p>Que legal que você se interessou em saber mais sobre o CrowdCapital. Aqui vão alguns textos que
-                    com certeza irão te ajudar a entender melhor o nosso propósito.</p>
-                </div>
-            </div>
-        </header>
-        <content class="content" id="main">
-
-
-            <div class="container" style="z-index:1;">
-                <div class="row">
-                    <?php
-                        for($i=0;$i<3;$i++){
-                            echo '
-                            <div class="col-md-4">
-                                <div class="serviceBox box_medium" id="box'.$i.'">
-                                    <a href="'.$medium[$i]['link'].'" target="_blank">
-                                        <img src="'.$medium[$i]['image'].'" class="img_chamada" />
-                                    </a>
-                                    <div class="row texto_box">
-                                        <div class="col-md-12">
-                                            <h4>'.$medium[$i]['title'].'</h4>
-                                            <p>'.substr($medium[$i]['texto'],0,81).'
-                                            ...
-                                            <a href="'.$medium[$i]['link'].'" target="_blank">Leia Mais</a></p>
-                                        </div> 
-                                    </div>
+    <div class="container">
+        <div class="col-md-12">
+            <h2  style="text-align: left; font-family:GothamBold">Saiba Mais</h2>
+            <p>Que legal que você se interessou em saber mais sobre o CrowdCapital. Aqui vão alguns textos que
+            com certeza irão te ajudar a entender melhor o nosso propósito.</p>
+        </div>
+    </div>
+    <content class="content" id="main">
+        <div class="container" style="z-index:1;">
+            <div class="row">
+                <?php
+                    for($i=0;$i<3;$i++){
+                        echo '
+                        <div class="col-md-4">
+                            <div class="serviceBox box_medium" id="box'.$i.'">
+                                <a href="'.$medium[$i]['link'].'" target="_blank">
+                                    <img src="'.$medium[$i]['image'].'" class="img_chamada" />
+                                </a>
+                                <div class="row texto_box">
+                                    <div class="col-md-12">
+                                        <h4>'.$medium[$i]['title'].'</h4>
+                                        <p>'.substr($medium[$i]['texto'],0,81).'
+                                        ...
+                                        <a href="'.$medium[$i]['link'].'" target="_blank">Leia Mais</a></p>
+                                    </div> 
                                 </div>
                             </div>
-                            ';
-                        }
-
-                        ?>
-                </div>
-
-
-                    <?php
-                        for($j=3;$j<count($medium);$j++) {
-                            if(isset($medium[$i])) {
-                                echo ' <div class="row" style="margin: 30px;">';
-                                for ($f = 0; $f <= 3; $f++) {
-                                    if (isset($medium[$i])) {
-                                        echo '
-                                        <div class="col-md-3">
-                                            <div class="serviceBox_saibaMais box_small" id="box' . $i . '">
-                                                <a href="'.$medium[$i]['link'].'" target="_blank">
-                                                    <img src="' . $medium[$i]['image'] . '" class="img_chamada" />
-                                                </a>
-                                                <div class="row texto_box">
-                                                    <div class="col-md-12">
-                                                        <b>' . $medium[$i]['title'] . '</b>
-                                                    </div> 
-                                                </div>
-                                            </div>
-                                        </div>
-                                        ';
-                                    }
-                                    $i++;
-                                }
-                                echo '</div>';
-                            }
-                        }
+                        </div>
+                        ';
+                    }
                     ?>
-                
-
             </div>
-        </content>
-
+            <div class="row" align="center" style="margin-top: 30px">
+                <div class="col-md-12">
+                    <h4  style=" font-family:GothamBold">Qualquer outra dúvida que tiver, é só escrever pra gente.<br />
+                        Vai ser um prazer falar com você.</h4>
+                </div>
+            </div>
+            <?php
+                for($j=3;$j<count($medium);$j++) {
+                    if(isset($medium[$i])) {
+                        echo ' <div class="row" style="margin: 30px;">';
+                        for ($f = 0; $f <= 3; $f++) {
+                            if (isset($medium[$i])) {
+                                echo '
+                                <div class="col-md-3" style="padding: 24px;">
+                                    <div class="serviceBox_saibaMais box_small" id="box' . $i . '">
+                                        <a href="'.$medium[$i]['link'].'" target="_blank">
+                                            <img src="' . $medium[$i]['image'] . '" class="img_chamada" />
+                                        </a>
+                                        <div class="row texto_box">
+                                            <div class="col-md-12">
+                                                <b>' . $medium[$i]['title'] . '</b>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                                ';
+                            }
+                            $i++;
+                        }
+                        echo '</div>';
+                    }
+                }
+            ?>
+        </div>
+    </content>
     <!--Footer-->
     <?php require_once "assets/includes/footer.php" ?>
     <!--Scripts-->

@@ -1004,7 +1004,7 @@ nav{
 }
 
 .box_medium h4{
-    text-align: justify;
+    text-align: center;
     min-height: 95px;
 }
 
@@ -1018,4 +1018,8 @@ nav{
 .box_small img{
     height: 145px;
     width: 100%;
+}
+.box_small > .texto_box{
+    text-align: left;
+    font-size: 15px;
 }
