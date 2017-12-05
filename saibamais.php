@@ -32,10 +32,13 @@ foreach ($xml->channel->item as $item) {
 <!doctype html>
 <html lang="pt-br">
 <head>
-	<title>Crowd Capital - Para Empresas</title>
+	
+	<title>Crowd Capital - Saiba Mais</title>
 	<!--CSS e metas -->
-	   	<!--CSS e metas -->
 	<?php require_once "assets/includes/head.php" ?>
+    
+	<!-- PROGRESS -->
+	<link rel="stylesheet" href="assets/css/progress.css">
 </head>
 
 <body>
@@ -44,7 +47,8 @@ foreach ($xml->channel->item as $item) {
     <div class="main-wrapper" id="main">
 			<!--Menu default-->
 			<?php require_once "assets/includes/menu_default.php" ?>
-    <div class="container">
+			
+			<div class="container">
         <div class="col-md-12">
             <h2  style="text-align: left; font-family:GothamBold">Saiba Mais</h2>
             <p>Que legal que você se interessou em saber mais sobre o CrowdCapital. Aqui vão alguns textos que
