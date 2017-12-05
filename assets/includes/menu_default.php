@@ -24,7 +24,7 @@
 			</div>
 			<div class="col-md-2 hidden-xs hidden-sm">				
 				<div class="navbar-header">   
-					<a href="saiba-mais" class="navbar-brand scrollto" title="mais">
+					<a href="saibamais" class="navbar-brand scrollto" title="mais">
 					  Saber Mais
 					</a> 
 				</div><!-- /End Navbar-Header -->
