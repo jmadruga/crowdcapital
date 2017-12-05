@@ -29,25 +29,21 @@ foreach ($xml->channel->item as $item) {
 }
 
 ?>
-
 <!doctype html>
 <html lang="pt-br">
 <head>
-    <title>CrowdCapital - Saiba mais</title>
-
-    <!--CSS e metas -->
-    <?php require_once "assets/includes/head.php" ?>
-
+	<title>Crowd Capital - Para Empresas</title>
+	<!--CSS e metas -->
+	   	<!--CSS e metas -->
+	<?php require_once "assets/includes/head.php" ?>
 </head>
+
 <body>
-
-<content>
-
-</content>
-    <!--Menu mobile-->
-    <?php require_once "assets/includes/menu_mobile.php" ?>
-<!--Menu default-->
-<?php require_once "assets/includes/menu_default.php" ?>
+	<!--Menu mobile-->
+	<?php require_once "assets/includes/menu_mobile.php" ?>
+    <div class="main-wrapper" id="main">
+			<!--Menu default-->
+			<?php require_once "assets/includes/menu_default.php" ?>
     <div class="container">
         <div class="col-md-12">
             <h2  style="text-align: left; font-family:GothamBold">Saiba Mais</h2>
@@ -115,9 +111,12 @@ foreach ($xml->channel->item as $item) {
             ?>
         </div>
     </content>
-    <!--Footer-->
-    <?php require_once "assets/includes/footer.php" ?>
+		
+		<!--Footer-->
+		<?php require_once "assets/includes/footer.php" ?>
+	</div>
     <!--Scripts-->
-    <?php require_once "assets/includes/scripts.php" ?>
+    <?php require_once "assets/includes/scripts.php" ?> 
+
 </body>
 </html>
