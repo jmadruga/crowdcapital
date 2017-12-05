@@ -5,7 +5,7 @@
                         <!-- Footer Left Col -->
                         <div class="col-md-4">
 							<ul id="menuFooter" style="color:white;font-family:Gotham; ">
-								<li><a class="scrollto" href="saiba-mais">SABER MAIS</a></li>
+								<li><a class="scrollto" href="saibamais">SABER MAIS</a></li>
 								<li><a class="scrollto" href="index#comoFunciona">COMO FUNCIONA</a></li>
 								<li><a class="scrollto" href="index#motivos">MOTIVOS PARA FAZER PARTE</li>
 								<li><a class="scrollto" href="index#apliquese">ME APLICAR</a></li>
