@@ -32,8 +32,8 @@ a, .text-color {
 }
 
 .btn-pink:hover,.btn-green:hover, .btn-color-ghost:hover {
-    background: white;
-    color: #e9194d;
+    background: #e9194d;
+    color: #ffffff;
     border-color: #e9194d;
 }
 
