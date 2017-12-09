@@ -42,7 +42,7 @@
                     </div>
                     <div class="col-md-2 hidden-xs hidden-sm">
                         <div class="navbar-header">
-                            <a href="saiba-mais/index.html" class="navbar-brand scrollto" title="mais">
+                            <a href="saibamais" class="navbar-brand scrollto" title="mais">
                                 Saiba Mais
                             </a>
                         </div>
@@ -54,10 +54,10 @@
             </div>
         </nav>
         <div class="container  hero-app" style="z-index:1;">
-            <div class="row vmiddle" style="z-index:1;">
+            <div class="row" style="z-index:1;margin-top: 70px;">
                 <div class="col-md-12">
                     <div class="row" id="banner">
-                        <div class="col-md-10" style="padding-top: 300px;">
+                        <div class="col-md-10">
                             <h3 style="font-family:GothamLight;color:white">Você é <span
                                         style="font-family:GothamBold;color:white">feliz hoje? </span></h3>
                             <p style="color:white">Imagine ser dono dos negócios mais promissores do mundo?<br/> Sem
@@ -70,7 +70,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-2" style="margin-top: 330px;z-index:1;">
+                        <div class="col-md-2" style="z-index:1;">
                             <img src="assets/images/logos/objetivos_sustentavel.png"
                                  style="margin-top: -13px; height: 153px;" alt="" class="img-responsive  center-block"/>
                         </div>
