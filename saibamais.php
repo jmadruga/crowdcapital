@@ -58,27 +58,49 @@ foreach ($xml->channel->item as $item) {
     <content class="content" id="main">
         <div class="container" style="z-index:1;">
             <div class="row">
-                <?php
-                    for($i=0;$i<3;$i++){
-                        echo '
-                        <div class="col-md-4">
-                            <div class="serviceBox box_medium" id="box'.$i.'">
-                                <a href="'.$medium[$i]['link'].'" target="_blank">
-                                    <img src="'.$medium[$i]['image'].'" class="img_chamada" />
-                                </a>
-                                <div class="row texto_box">
-                                    <div class="col-md-12">
-                                        <h4>'.$medium[$i]['title'].'</h4>
-                                        <p>'.substr($medium[$i]['texto'],0,81).'
-                                        ...
-                                        <a href="'.$medium[$i]['link'].'" target="_blank">Leia Mais</a></p>
-                                    </div> 
-                                </div>
+                <div class="col-md-4">
+                    <div class="serviceBox box_medium" id="box">
+                        <a href="comofunciona.php" target="_blank">
+                            <img src="assets/images/como-funciona.png" class="img_chamada" />
+                        </a>
+                        <div class="row texto_box">
+                            <div class="col-md-12">
+                                <h4>Regras de funcionamento</h4>
+                                <p>Para facilitar e aumentar as chances de sucesso desse projeto, recorreremos às estratégias Startups e focaremos em manter a operação sempre o mais enxuta possível...
+                                    <a href="comofunciona.php" target="_blank">Leia Mais</a></p>
                             </div>
                         </div>
-                        ';
-                    }
-                    ?>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="serviceBox box_medium" id="box">
+                        <a href="oquee.php" target="_blank">
+                            <img src="assets/images/o-que-e.png" class="img_chamada" />
+                        </a>
+                        <div class="row texto_box">
+                            <div class="col-md-12">
+                                <h4> O que é a Crowdcapital</h4>
+                                <p>A Crowdcapital (CC) é formalmente uma cooperativa de empreendedorismo, onde um coletivo de pessoas mobiliza recursos pulverizados visando...
+                                    <a href="oquee.php" target="_blank">Leia Mais</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="serviceBox box_medium" id="box">
+                        <a href="faq.php" target="_blank">
+                            <img src="assets/images/faq.png" class="img_chamada" />
+                        </a>
+                        <div class="row texto_box">
+                            <div class="col-md-12">
+                                <h4>Perguntas Frequentes</h4>
+                                <p>O Crowdcapital é uma instituição sem fins lucrativos?...
+                                    <a href="faq.php" target="_blank">Leia Mais</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div class="row" align="center" style="margin-top: 30px">
                 <div class="col-md-12">
@@ -87,7 +109,7 @@ foreach ($xml->channel->item as $item) {
                 </div>
             </div>
             <?php
-                for($j=3;$j<count($medium);$j++) {
+                for($i=0;$i<count($medium);$i++) {
                     if(isset($medium[$i])) {
                         echo ' <div class="row" style="margin: 30px;">';
                         for ($f = 0; $f <= 3; $f++) {
