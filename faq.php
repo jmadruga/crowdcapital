@@ -16,8 +16,9 @@
 
     <div class="container   " style="z-index:1;">
         <div class="row" id="" style="z-index:1;">
-            <div class="col-md-12" style="margin-top: 15px;">
-                <h3 style="font-family:GothamBold;color:#353131">FAQ</h3>
+            <div class="col-md-2"></div>
+            <div class="col-md-8" style="margin-top: 15px;">
+                <h3 style="font-family:GothamBold;color:#353131;text-align: center">FAQ</h3>
                 <p>
                     1.3 Perguntas Frequentes
                     <br /><br />
@@ -99,6 +100,7 @@
 
                 </p>
             </div>
+            <div class="col-md-2"></div>
         </div>
     </div>
 

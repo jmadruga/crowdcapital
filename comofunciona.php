@@ -16,8 +16,9 @@
 
     <div class="container   " style="z-index:1;">
           <div class="row" id="" style="z-index:1;">
-            <div class="col-md-12" style="margin-top: 15px;">
-                <h3 style="font-family:GothamBold;color:#353131">Como Funciona?</h3>
+              <div class="col-md-2"></div>
+            <div class="col-md-8" style="margin-top: 15px;">
+                <h3 style="font-family:GothamBold;color:#353131;text-align:center;">Como Funciona?</h3>
                 <p>1.	Na prática<br />
 
                     Regras de funcionamento<br />
@@ -200,6 +201,7 @@
                     <br />  Tabela de funções, remuneração, preferência;
                 </p>
             </div>
+            <div class="col-md-2"></div>
         </div>
     </div>
 
