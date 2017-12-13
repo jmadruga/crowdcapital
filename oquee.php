@@ -16,8 +16,9 @@
 
     <div class="container   " style="z-index:1;">
         <div class="row" id="" style="z-index:1;">
-            <div class="col-md-12" style="margin-top: 15px;">
-                <h3 style="font-family:GothamBold;color:#353131">O que é?</h3>
+            <div class="col-md-2"></div>
+            <div class="col-md-8" style="margin-top: 15px;">
+                <h3 style="font-family:GothamBold;color:#353131;text-align: center">O que é?</h3>
                 <p>1 - Na teoria<br /><br />
                     Definição Conceitual<br />
 
@@ -511,6 +512,7 @@
 
                 </p>
             </div>
+            <div class="col-md-2"></div>
         </div>
     </div>
 
