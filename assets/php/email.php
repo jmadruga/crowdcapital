@@ -1,8 +1,8 @@
 <?php
 $to      = 'felipe@crowdcapital.com.br';
 $subject = 'Nova aplicação pelo formulário';
-$q1 = $_GET['checkboxes'];
-$q2 = $_GET['feliz'];
+$q1 = $_POST['checkboxes'];
+$q2 = $_POST['feliz'];
 
 
 $message = '
@@ -12,7 +12,7 @@ $message = '
 <b>Nome:</b>
 </td>
 <td>
-' . $_GET['nome']. '
+' . $_POST['nome']. '
 </td>
 </tr>
 <tr>
@@ -20,7 +20,7 @@ $message = '
 <b>Data:</b>
 </td>
 <td>
-'. $_GET['data']. '
+'. $_POST['data']. '
 </td>
 </tr>
 <tr>
@@ -28,7 +28,7 @@ $message = '
 <b>Telefone: </b>
 </td>
 <td>
-'.$_GET['telefone'].'
+'.$_POST['telefone'].'
 </td>
 </tr>
 <tr>
@@ -36,7 +36,7 @@ $message = '
 <b>Cidade:</b> 
 </td>
 <td>
-'.$_GET['cidade'].'
+'.$_POST['cidade'].'
 </td>
 </tr>';
 $message .= " <tr>

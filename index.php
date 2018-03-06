@@ -81,9 +81,13 @@
                 <div class="col-md-12" style=" top: 110px; z-index:1;">
                     <h3 style="font-family:GothamBold;color:white">Motivos para fazer parte</h3><br/>
                     <div class="row">
-                        <ul id="thumbnails" style="height: 442px;">
+                        <ul id="thumbnails" style="height: 485px;">
                             <li>
+                                <div class="faixa">
+                                    #sejacrowdcapital
+                                </div>
                                 <div class="serviceBox">
+
                                     <div><img src="assets/images/icons/retorno-vitalicio.png"
                                               style=" margin-top:10px; height:170px" alt=""
                                               class="img-responsive  center-block"/></div>
@@ -93,7 +97,11 @@
                             </li>
 
                             <li>
+                                <div class="faixa">
+                                    Explore todo seu potencial
+                                </div>
                                 <div class="serviceBox">
+
                                     <div><img src="assets/images/icons/ideia-realidade.png"
                                               style=" margin-top:10px; height:170px" alt=""
                                               class="img-responsive  center-block"/></div>
@@ -103,6 +111,9 @@
                             </li>
 
                             <li>
+                                <div class="faixa">
+                                    Obtenha paz de espírito
+                                </div>
                                 <div class="serviceBox">
                                     <div><img src="assets/images/icons/tempo-ocioso.png"
                                               style=" margin-top:10px; height:170px" alt=""
@@ -114,7 +125,11 @@
                             </li>
 
                             <li>
+                                <div class="faixa">
+                                    Aposentadoria antecipada
+                                </div>
                                 <div class="serviceBox">
+
                                     <div><img src="assets/images/icons/contribua-economia.png"
                                               style=" margin-top:10px; height:170px" alt=""
                                               class="img-responsive  center-block"/></div>
@@ -125,6 +140,9 @@
                             </li>
 
                             <li>
+                                <div class="faixa">
+                                    Vagas em bons empregos
+                                </div>
                                 <div class="serviceBox">
                                     <div><img src="assets/images/icons/vagas-emprego.png"
                                               style=" margin-top:10px; height:170px" alt=""
@@ -135,6 +153,9 @@
                             </li>
 
                             <li>
+                                <div class="faixa">
+                                    Super descontos exclusivos
+                                </div>
                                 <div class="serviceBox">
                                     <div><img src="assets/images/icons/clube-desconto.png"
                                               style=" margin-top:10px; height:170px" alt=""
@@ -148,7 +169,7 @@
                 </div>
             </div>
     </header>
-    <div style="margin-top: 142px;">
+    <div style="margin-top: 155px;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -168,7 +189,7 @@
             </div>
         </div>
     </div>
-    <div style="padding: 30px; width: 100%; background-color:#eff2f6;">
+    <div style="width: 100%; background-color:#eff2f6;">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 boxes" id="box1_dono" style="text-align:center">
@@ -194,7 +215,7 @@
             </div>
         </div>
     </div>
-    <div style="padding: 30px; width: 100%; background-color:white;">
+    <div style="padding: 30px; width: 100%; background-color: #d5e1f1;">
         <div class="container">
             <div class="row" id="box_dono">
                 <div class="col-md-4" style="text-align:center">
@@ -282,93 +303,101 @@
             <div class="row" id="apliquese">
                 <div class="col-md-12 col-xs-12 col-lg-12 col-sm-12">
                     <h1 style="font-family:GothamBold;color:white">Aplique-se</h1><br/>
-                    <form action="assets/php/email.php" method="get">
+                    <form action="assets/php/email.php" method="post">
                         <fieldset>
-                            <div class="form-group">
-                                <label class="control-label" for="nome">Nome Completo</label>
-                                <input id="nome" name="nome" type="text" placeholder="Nome"
-                                       class="form-control input-md" required="">
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label" for="data">E-mail</label>
-                                <input id="email" name="email" type="text" placeholder="E-mail"
-                                       class="form-control input-md">
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label" for="telefone">Telefone</label>
-                                <input id="telefone" name="telefone" type="text" placeholder="DDD"
-                                       class="form-control input-md" style="width: 82px;">
-                                <input id="telefone" name="telefone" type="text" placeholder="Telefone"
-                                       class="form-control input-md" style="width: 239px;"></div>
-                            <div class="row">
+
+                            <div class="table-row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label class="control-label" for="checkboxes"><b>Marque interesses na CC (1 ou
-                                                mais):</b></label>
-                                        <div class="checkbox">
-                                            <label for="checkboxes-0">
-                                                <input type="checkbox" name="checkboxes[]" id="checkboxes"
-                                                       value="Ter renda vitalícia pra viver mais tranquilo">
-                                                Ter renda vitalícia pra viver mais tranquilo
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label for="checkboxes-1">
-                                                <input type="checkbox" name="checkboxes[]" id="checkboxes"
-                                                       value="Poder consumir produtos e serviços com preços muito melhores">
-                                                Poder consumir produtos e serviços com preços muito melhores
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label for="checkboxes-2">
-                                                <input type="checkbox" name="checkboxes[]" id="checkboxes"
-                                                       value="Conseguir linhas de crédito melhores que do mercado">
-                                                Conseguir linhas de crédito melhores que do mercado
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label for="checkboxes-3">
-                                                <input type="checkbox" name="checkboxes[]" id="checkboxes"
-                                                       value="Receber apoio para uma ideia que tenho">
-                                                Receber apoio para uma ideia que tenho
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label for="checkboxes-4">
-                                                <input type="checkbox" name="checkboxes[]" id="checkboxes"
-                                                       value="Ter acesso a cursos e treinamentos sem custo">
-                                                Ter acesso a cursos e treinamentos sem custo
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label for="checkboxes-5">
-                                                <input type="checkbox" name="checkboxes[]" id="checkboxes"
-                                                       value="Captar investimento para uma empresa que sou sócio">
-                                                Captar investimento para uma empresa que sou sócio
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label for="checkboxes-6">
-                                                <input type="checkbox" name="checkboxes[]" id="checkboxes"
-                                                       value="Conseguir demanda para algo que faço ou produzo">
-                                                Conseguir demanda para algo que faço ou produzo
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label for="checkboxes-7">
-                                                <input type="checkbox" name="checkboxes[]" id="checkboxes-7"
-                                                       value="Fomentar uma economia social e ambientalmente sustentável">
-                                                Fomentar uma economia social e ambientalmente sustentável
-                                            </label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label for="checkboxes-8">
-                                                <input type="checkbox" name="checkboxes[]" id="checkboxes-8"
-                                                       value="Trabalhar por um mundo mais solidário para meus filhos e netos">
-                                                Trabalhar por um mundo mais solidário para meus filhos e netos
-                                            </label>
+                                        <label class="control-label" for="nome">Nome Completo</label>
+                                        <input id="nome" name="nome" type="text" placeholder="Nome"
+                                               class="form-control input-md" required="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="telefone">Telefone</label>
+                                        <input id="telefone" name="telefone" type="text" placeholder="DDD"
+                                               class="form-control input-md" style="width: 82px;">
+                                        <input id="telefone" name="telefone" type="text" placeholder="Telefone"
+                                               class="form-control input-md" style="width: 72%;"></div>
+                                </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="control-label" for="data">E-mail</label>
+                                        <input id="email" name="email" type="text" placeholder="E-mail"
+                                               class="form-control input-md"><br /><br />
+                                        <div class="form-group">
+                                            <label class="control-label" for="checkboxes"><b>Marque interesses na CC (1 ou
+                                                    mais):</b></label>
+                                            <div class="checkbox">
+                                                <label for="checkboxes-0">
+                                                    <input type="checkbox" name="checkboxes[]" id="checkboxes"
+                                                           value="Ter renda vitalícia pra viver mais tranquilo">
+                                                    Ter renda vitalícia pra viver mais tranquilo
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label for="checkboxes-1">
+                                                    <input type="checkbox" name="checkboxes[]" id="checkboxes"
+                                                           value="Poder consumir produtos e serviços com preços muito melhores">
+                                                    Poder consumir produtos e serviços com preços muito melhores
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label for="checkboxes-2">
+                                                    <input type="checkbox" name="checkboxes[]" id="checkboxes"
+                                                           value="Conseguir linhas de crédito melhores que do mercado">
+                                                    Conseguir linhas de crédito melhores que do mercado
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label for="checkboxes-3">
+                                                    <input type="checkbox" name="checkboxes[]" id="checkboxes"
+                                                           value="Receber apoio para uma ideia que tenho">
+                                                    Receber apoio para uma ideia que tenho
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label for="checkboxes-4">
+                                                    <input type="checkbox" name="checkboxes[]" id="checkboxes"
+                                                           value="Ter acesso a cursos e treinamentos sem custo">
+                                                    Ter acesso a cursos e treinamentos sem custo
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label for="checkboxes-5">
+                                                    <input type="checkbox" name="checkboxes[]" id="checkboxes"
+                                                           value="Captar investimento para uma empresa que sou sócio">
+                                                    Captar investimento para uma empresa que sou sócio
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label for="checkboxes-6">
+                                                    <input type="checkbox" name="checkboxes[]" id="checkboxes"
+                                                           value="Conseguir demanda para algo que faço ou produzo">
+                                                    Conseguir demanda para algo que faço ou produzo
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label for="checkboxes-7">
+                                                    <input type="checkbox" name="checkboxes[]" id="checkboxes-7"
+                                                           value="Fomentar uma economia social e ambientalmente sustentável">
+                                                    Fomentar uma economia social e ambientalmente sustentável
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label for="checkboxes-8">
+                                                    <input type="checkbox" name="checkboxes[]" id="checkboxes-8"
+                                                           value="Trabalhar por um mundo mais solidário para meus filhos e netos">
+                                                    Trabalhar por um mundo mais solidário para meus filhos e netos
+                                                </label>
+                                            </div>
                                         </div>
                                     </div>
+
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group" style="color:white">
@@ -406,7 +435,7 @@
                             </div>
                             <div class="form-group" align="center">
                                 <label class="ontrol-label" for="enviar"></label>
-                                <button id="enviar" name="enviar" class="btn btn-primary">Enviar</button>
+                                <button id="enviar" name="enviar" class="btn btn-pink">Enviar</button>
                             </div>
                         </fieldset>
                     </form>
@@ -417,10 +446,9 @@
 </div>
 <!--Footer-->
 <?php require_once "assets/includes/footer.php" ?>
-</div>
+
 <!--Scripts-->
 <?php require_once "assets/includes/scripts.php" ?>
-<script type="text/javascript" src="assets/js/plugins/jquery.flexisel.js" async="async"></script>
 
 </body>
 </html>

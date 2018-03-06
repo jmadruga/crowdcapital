@@ -1,21 +1,22 @@
 // Javascript Document
 
-  $(document).ready($(function(){
- var parameter = getParameterByName('e');
-  if( parameter == 1){
-	
-			$( "#dialog" ).dialog();
-	
-	}
-  }));
-  	var $doc = $('html, body');
-	$('a').click(function() {
-		$doc.animate({
-			scrollTop: $( $.attr(this, 'href') ).offset().top
-		}, 500);
-		return false;
-	});
-  function getParameterByName(name, url) {
+$(document).ready($(function () {
+    var parameter = getParameterByName('e');
+    if (parameter == 1) {
+
+        $("#dialog").dialog();
+
+    }
+}));
+var $doc = $('html, body');
+$('a').click(function () {
+    $doc.animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+    return false;
+});
+
+function getParameterByName(name, url) {
     if (!url) url = window.location.href;
     name = name.replace(/[\[\]]/g, "\\$&");
     var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
@@ -25,79 +26,96 @@
     return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
-  $( function() {
-    $("#datepicker").datepicker( {dateFormat: 'dd/mm/yy',
-	dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'],
-    dayNamesMin: ['D','S','T','Q','Q','S','S','D'],
-    dayNamesShort: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
-    monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
-    monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'],
-    nextText: 'Próximo',
-    prevText: 'Anterior'});
-  } );
+$(function () {
+    $("#datepicker").datepicker({
+        dateFormat: 'dd/mm/yy',
+        dayNames: ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'],
+        dayNamesMin: ['D', 'S', 'T', 'Q', 'Q', 'S', 'S', 'D'],
+        dayNamesShort: ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb', 'Dom'],
+        monthNames: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
+        monthNamesShort: ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'],
+        nextText: 'Próximo',
+        prevText: 'Anterior'
+    });
+});
 
-		
-		$(window).load(function() {
-		
-		
-			$("#thumbnails").flexisel({
-				visibleItems: 4,
-				itemsToScroll: 1,         
-				autoPlay: {
-					enable: true,
-					interval: 5000,
-					pauseOnHover: true
-				}        
-			});
-			
-		});
-		
-		
-		$(document).ready(function(){	
-			$("#box_aproveite").hide();
-			$("#box_prospere").hide();
-			$("#box_trabalhe").hide();
-			
-			$("#box1_dono").click(function(){
-				$("#box_aproveite").hide();
-				$("#box_prospere").hide();
-				$("#box_trabalhe").hide();
-			    $("#box_dono").show(133);
-			});
-			$("#box1_trabalhe").click(function(){
-				$("#box_aproveite").hide();
-				$("#box_prospere").hide();
-				$("#box_dono").hide();
-			    $("#box_trabalhe").show(500);
-			});
-			$("#box1_aproveite").click(function(){
-				$("#box_trabalhe").hide();
-				$("#box_prospere").hide();
-				$("#box_dono").hide();
-			    $("#box_aproveite").show(500);
-			});
-			$("#box1_prospere").click(function(){
-				$("#box_trabalhe").hide();
-				$("#box_aproveite").hide();
-				$("#box_dono").hide();
-			    $("#box_prospere").show(500);
-			});
-		});
-		
-		
-	
+
+$(window).load(function () {
+
+
+    $("#thumbnails").flexisel({
+        visibleItems: 4,
+        itemsToScroll: 1,
+        autoPlay: {
+            enable: true,
+            interval: 5000,
+            pauseOnHover: true
+        }
+    });
+
+});
+
+
+$(document).ready(function () {
+    $("#box_aproveite").hide();
+    $("#box_prospere").hide();
+    $("#box_trabalhe").hide();
+    $("#box1_dono").css('background-color','#d5e1f1');
+
+    $("#box1_dono").click(function () {
+        $("#box1_dono").css('background-color','#d5e1f1');
+        $("#box_aproveite").hide();
+        $("#box1_aproveite").css('background-color','');
+        $("#box_prospere").hide();
+        $("#box1_prospere").css('background-color','');
+        $("#box_trabalhe").hide();
+        $("#box1_trabalhe").css('background-color','');
+        $("#box_dono").fadeIn();
+    });
+    $("#box1_trabalhe").click(function () {
+        $("#box1_trabalhe").css('background-color','#d5e1f1');
+        $("#box_aproveite").hide();
+        $("#box1_aproveite").css('background-color','');
+        $("#box_prospere").hide();
+        $("#box1_prospere").css('background-color','');
+        $("#box_dono").hide();
+        $("#box1_dono").css('background-color','');
+        $("#box_trabalhe").fadeIn(500);
+    });
+    $("#box1_aproveite").click(function () {
+        $("#box1_aproveite").css('background-color','#d5e1f1');
+        $("#box_trabalhe").hide();
+        $("#box1_trabalhe").css('background-color','');
+        $("#box_prospere").hide();
+        $("#box1_prospere").css('background-color','');
+        $("#box_dono").hide();
+        $("#box1_dono").css('background-color','');
+        $("#box_aproveite").fadeIn(500);
+    });
+    $("#box1_prospere").click(function () {
+        $("#box1_prospere").css('background-color','#d5e1f1');
+        $("#box_trabalhe").hide();
+        $("#box1_trabalhe").css('background-color','');
+        $("#box_aproveite").hide();
+        $("#box1_aproveite").css('background-color','');
+        $("#box_dono").hide();
+        $("#box1_dono").css('background-color','');
+        $("#box_prospere").fadeIn(500);
+    });
+});
+
 
 /* =================================
    LOADER                     
 =================================== */
 // makes sure the whole site is loaded
-$(window).load(function() {
+$(window).load(function () {
 
     "use strict";
 
     // will first fade out the loading animation
     $(".signal").fadeOut();
-        // will fade out the whole DIV that covers the website.
+    // will fade out the whole DIV that covers the website.
     $(".preloader").fadeOut("slow");
 
 });
@@ -107,11 +125,11 @@ $(window).load(function() {
    LOGIN-SIGNUP MODAL                     
 =================================== */
 
-function showRegisterForm(){
+function showRegisterForm() {
     "use strict";
-    $('.loginBox').fadeOut('fast',function(){
+    $('.loginBox').fadeOut('fast', function () {
         $('.registerBox').fadeIn('fast');
-        $('.login-footer').fadeOut('fast',function(){
+        $('.login-footer').fadeOut('fast', function () {
             $('.register-footer').fadeIn('fast');
         });
         $('.modal-title').html('Create an Account');
@@ -121,14 +139,14 @@ function showRegisterForm(){
 }
 
 
-function showLoginForm(){
+function showLoginForm() {
     "use strict";
-    $('#loginModal .registerBox').fadeOut('fast',function(){
+    $('#loginModal .registerBox').fadeOut('fast', function () {
         $('.loginBox').fadeIn('fast');
-        $('.register-footer').fadeOut('fast',function(){
+        $('.register-footer').fadeOut('fast', function () {
             $('.login-footer').fadeIn('fast');
         });
-        
+
         $('.modal-title').html('Sign in to <span>SmartMvp</span>');
         $('.modal-subtitle').html('Enter your email and password');
     });
@@ -136,14 +154,14 @@ function showLoginForm(){
 }
 
 
-function openLoginModal(){
+function openLoginModal() {
     "use strict";
     showLoginForm();
     $('#loginModal').modal('show');
 }
 
 
-function openRegisterModal(){
+function openRegisterModal() {
     "use strict";
     showRegisterForm();
     $('#loginModal').modal('show');
@@ -153,10 +171,10 @@ function openRegisterModal(){
 /* =================================
    SCROLL NAVBAR
 =================================== */
-$(window).scroll(function(){
+$(window).scroll(function () {
     "use strict";
     var b = $(window).scrollTop();
-    if( b > 60 ){
+    if (b > 60) {
         $(".navbar").addClass("is-scrolling");
     } else {
         $(".navbar").removeClass("is-scrolling");
@@ -167,12 +185,12 @@ $(window).scroll(function(){
 /* =================================
    TYPING EFFECT
 =================================== */
-(function($) {
+(function ($) {
 
     "use strict";
 
     $('[data-typer-targets]').typer();
-    $.typer.options.clearOnHighlight=false;
+    $.typer.options.clearOnHighlight = false;
 
 })(jQuery);
 
@@ -180,10 +198,10 @@ $(window).scroll(function(){
 /* =================================
    DATA SPY FOR ACTIVE SECTION                 
 =================================== */
-(function($) {
-    
+(function ($) {
+
     "use strict";
-    
+
     $('body').attr('data-spy', 'scroll').attr('data-target', '.navbar-fixed-top').attr('data-offset', '11');
 
 })(jQuery);
@@ -192,13 +210,13 @@ $(window).scroll(function(){
 /* =================================
    HIDE MOBILE MENU AFTER CLICKING 
 =================================== */
-(function($) {
-    
+(function ($) {
+
     "use strict";
-    
+
     $('.nav.navbar-nav li a').click(function () {
         var $togglebtn = $(".navbar-toggle");
-        if (!($togglebtn.hasClass("collapsed")) && ($togglebtn.is(":visible"))){
+        if (!($togglebtn.hasClass("collapsed")) && ($togglebtn.is(":visible"))) {
             $(".navbar-toggle").trigger("click");
         }
     });
@@ -214,292 +232,301 @@ $(window).scroll(function(){
 /* ==================================================== */
 /* ==================================================== */
 
-$(document).ready(function() {
+$(document).ready(function () {
 
 
-"use strict";
+    "use strict";
 
 
-/* =====================================
-    PARALLAX STELLAR WITH MOBILE FIXES                    
-======================================== */
-if (Modernizr.touch && ($('.header').attr('data-stellar-background-ratio') !== undefined)) {
-    $('.header').css('background-attachment', 'scroll');
-    $('.header').removeAttr('data-stellar-background-ratio');
-} else {
-    $(window).stellar({
-        horizontalScrolling: false
+    /* =====================================
+        PARALLAX STELLAR WITH MOBILE FIXES
+    ======================================== */
+    if (Modernizr.touch && ($('.header').attr('data-stellar-background-ratio') !== undefined)) {
+        $('.header').css('background-attachment', 'scroll');
+        $('.header').removeAttr('data-stellar-background-ratio');
+    } else {
+        $(window).stellar({
+            horizontalScrolling: false
+        });
+    }
+
+    /* =================================
+        WOW ANIMATIONS
+    =================================== */
+    new WOW().init();
+
+    /* ==========================================
+        EASY TABS
+    ============================================= */
+    $('.tabs.testimonials').easytabs({
+        animationSpeed: 300,
+        updateHash: false,
+        cycle: 10000
     });
-}
 
-/* =================================
-    WOW ANIMATIONS                   
-=================================== */
-new WOW().init();
-
-/* ==========================================
-    EASY TABS
-============================================= */
-$('.tabs.testimonials').easytabs({
-    animationSpeed: 300,
-    updateHash: false,
-    cycle: 10000
-});
-
-$('.tabs.features').easytabs({
-    animationSpeed: 300,
-    updateHash: false
-});
+    $('.tabs.features').easytabs({
+        animationSpeed: 300,
+        updateHash: false
+    });
 
 
-/* ==========================================
-   OWL CAROUSEL 
-============================================= */
-/* App Screenshot Carousel in Mobile-Download Section */
-$("#owl-carousel-shots-phone").owlCarousel({
-    singleItem:true,navigation: true,
-    navigationText: [
-        "<i class='icon arrow_carrot-left'></i>",
-        "<i class='icon arrow_carrot-right'></i>"
-                    ],
-    addClassActive : true,
-    itemsDesktop : [1200, 1],
-    itemsDesktopSmall : [960, 1],
-    itemsTablet : [769, 1],
-    itemsMobile : [700, 1],
-    responsiveBaseWidth : ".shot-container",
-    items : 1,
-    slideSpeed : 1000,
-    mouseDrag : true,
-    responsiveRefreshRate : 200,
-    autoPlay: 5000
-});
+    /* ==========================================
+       OWL CAROUSEL
+    ============================================= */
+    /* App Screenshot Carousel in Mobile-Download Section */
+    $("#owl-carousel-shots-phone").owlCarousel({
+        singleItem: true, navigation: true,
+        navigationText: [
+            "<i class='icon arrow_carrot-left'></i>",
+            "<i class='icon arrow_carrot-right'></i>"
+        ],
+        addClassActive: true,
+        itemsDesktop: [1200, 1],
+        itemsDesktopSmall: [960, 1],
+        itemsTablet: [769, 1],
+        itemsMobile: [700, 1],
+        responsiveBaseWidth: ".shot-container",
+        items: 1,
+        slideSpeed: 1000,
+        mouseDrag: true,
+        responsiveRefreshRate: 200,
+        autoPlay: 5000
+    });
 
-/* ==========================================
-    VENOBOX - LIGHTBOX FOR GALLERY AND VIDEOS
-============================================= */
-$('.venobox').venobox();
+    /* ==========================================
+        VENOBOX - LIGHTBOX FOR GALLERY AND VIDEOS
+    ============================================= */
+    $('.venobox').venobox();
 
-/* ===================================================================
-    TWEETIE -  TWITTER FEED PLUGIN THAT WORKS WITH NEW Twitter 1.1 API
-==================================================================== */
-$('.tweet').twittie({
-    apiPath : 'assets/js/plugins/twitter/api/tweet.php',
-    count: 2,
-    template: '{{tweet}} - <span class="date">{{date}}</span>'
-});
-
-
-/* =================================
-   SCROLL TO                  
-=================================== */
-var onMobile;
-
-onMobile = false;
-if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) { onMobile = true; }
-
-if (onMobile === true) {
-    jQuery('a.scrollto').click(function (event) {
-    jQuery('html, body').scrollTo(this.hash, this.hash, {gap: {y: -10}, animation:  {easing: 'easeInOutCubic', duration: 0}});
-    event.preventDefault();
-});
-} else {
-    jQuery('a.scrollto').click(function (event) {
-    jQuery('html, body').scrollTo(this.hash, this.hash, {gap: {y: -10}, animation:  {easing: 'easeInOutCubic', duration: 1500}});
-        event.preventDefault();
-});
-}
+    /* ===================================================================
+        TWEETIE -  TWITTER FEED PLUGIN THAT WORKS WITH NEW Twitter 1.1 API
+    ==================================================================== */
+    $('.tweet').twittie({
+        apiPath: 'assets/js/plugins/twitter/api/tweet.php',
+        count: 2,
+        template: '{{tweet}} - <span class="date">{{date}}</span>'
+    });
 
 
-/* ==========================================
-   MAILCHIMP NEWSLETTER SUBSCRIPTION
-============================================= */
-$(".mailchimp-subscribe").ajaxChimp({
-    callback: mailchimpCallback,
-    url: "http://themedept.us9.list-manage.com/subscribe/post?u=63465a86fdd5f3b9fa31f9278&amp;id=52df53337f" // Replace your mailchimp post url inside double quote "".  
-});
+    /* =================================
+       SCROLL TO
+    =================================== */
+    var onMobile;
 
-function mailchimpCallback(resp) {
-if(resp.result === 'success') {
-    $('.mc-success')
-    .html('<i class="icon icon_check_alt2"></i>' + resp.msg)
-    .fadeIn(1000);
-
-    $('.mc-failed').fadeOut(500);
-        
-} else if(resp.result === 'error') {
-    $('.mc-failed')
-    .html('<i class="icon icon_close_alt2"></i>' + resp.msg)
-    .fadeIn(1000);
-            
-    $('.mc-success').fadeOut(500);
-}
-}
-
-/* ==========================================
-   FUNCTION FOR EMAIL ADDRESS VALIDATION
-============================================= */
-function isValidEmail(emailAddress) {
-
-    var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
-
-    return pattern.test(emailAddress);
-
-}
-
-/* ==========================================
-   LOCAL NEWSLETTER
-============================================= */
-$("#subscribe").submit(function(e) {
-    e.preventDefault();
-    var data = {
-        email: $("#s-email").val()
-    };
-
-    if ( isValidEmail(data['email']) ) {
-        $.ajax({
-            type: "POST",
-            url: "assets/php/subscribe.php",
-            data: data,
-            success: function() {
-                $('.subscription-success').fadeIn(1000);
-                $('.subscription-failed').fadeOut(500);
-            }
-        });
-    } else {
-        $('.subscription-failed').fadeIn(1000);
-        $('.subscription-success').fadeOut(500);
+    onMobile = false;
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+        onMobile = true;
     }
 
-    return false;
-});
-
-/* ============================
-   LOGIN-MODAL VALIDATION. 
-=============================== */
-$("#login-modal").submit(function(e) {
-    e.preventDefault();
-    var data = {
-        password: $("#lm-password").val(),
-        email: $("#lm-email").val()
-    };
-
-    if ( isValidEmail(data['email']) && (data['password'].length > 1) ) {
-        $.ajax({
-            type: "POST",
-            url: "assets/php/subscribe.php",
-            data: data,
-            success: function() {
-                $('.lm-success').fadeIn(1000);
-                $('.lm-failed').fadeOut(500);
-            }
+    if (onMobile === true) {
+        jQuery('a.scrollto').click(function (event) {
+            jQuery('html, body').scrollTo(this.hash, this.hash, {
+                gap: {y: -10},
+                animation: {easing: 'easeInOutCubic', duration: 0}
+            });
+            event.preventDefault();
         });
     } else {
-        $('.lm-failed').fadeIn(1000);
-        $('.lm-success').fadeOut(500);
-    }
-
-    return false;
-});
-
-
-/* ===========================================
-   SIGNUP-MODAL VALIDATION. WITH CONFIRM PSW. 
-============================================== */
-$("#signup-modal").submit(function(e) {
-    e.preventDefault();
-    var data = {
-        password: $("#sm-password").val(),
-        email: $("#sm-email").val(),
-        pswconfirm: $("#sm-confirm").val()
-    };
-
-    if ( isValidEmail(data['email']) && (data['password'].length > 1) && (data['password'].match(data['pswconfirm'])) ) {
-        $.ajax({
-            type: "POST",
-            url: "assets/php/subscribe.php",
-            data: data,
-            success: function() {
-                $('.sm-success').fadeIn(1000);
-                $('.sm-failed').fadeOut(500);
-            }
+        jQuery('a.scrollto').click(function (event) {
+            jQuery('html, body').scrollTo(this.hash, this.hash, {
+                gap: {y: -10},
+                animation: {easing: 'easeInOutCubic', duration: 1500}
+            });
+            event.preventDefault();
         });
-    } else {
-        $('.sm-failed').fadeIn(1000);
-        $('.sm-success').fadeOut(500);
     }
 
-    return false;
-});
 
-/* ================================================
-   SIGNUP-DIVIDER VALIDATION. WITHOUT CONFIRM PSW. 
-=================================================== */
-$("#signup-divider").submit(function(e) {
-    e.preventDefault();
-    var data = {
-        email: $("#signup-email").val(),
-        password: $("#signup-password").val()
-    };
+    /* ==========================================
+       MAILCHIMP NEWSLETTER SUBSCRIPTION
+    ============================================= */
+    $(".mailchimp-subscribe").ajaxChimp({
+        callback: mailchimpCallback,
+        url: "http://themedept.us9.list-manage.com/subscribe/post?u=63465a86fdd5f3b9fa31f9278&amp;id=52df53337f" // Replace your mailchimp post url inside double quote "".
+    });
 
-    if ( isValidEmail(data['email']) && (data['password'].length > 1)) {
-        $.ajax({
-            type: "POST",
-            url: "assets/php/subscribe.php",
-            data: data,
-            success: function() {
-                $('.signup-success').fadeIn(1000);
-                $('.signup-failed').fadeOut(0);
-            }
-        });
-    } else {
-        $('.signup-failed').fadeIn(1000);
-        $('.signup-success').fadeOut(500);
+    function mailchimpCallback(resp) {
+        if (resp.result === 'success') {
+            $('.mc-success')
+                .html('<i class="icon icon_check_alt2"></i>' + resp.msg)
+                .fadeIn(1000);
+
+            $('.mc-failed').fadeOut(500);
+
+        } else if (resp.result === 'error') {
+            $('.mc-failed')
+                .html('<i class="icon icon_close_alt2"></i>' + resp.msg)
+                .fadeIn(1000);
+
+            $('.mc-success').fadeOut(500);
+        }
     }
 
-    return false;
-});
+    /* ==========================================
+       FUNCTION FOR EMAIL ADDRESS VALIDATION
+    ============================================= */
+    function isValidEmail(emailAddress) {
 
-/* ===================================================
-   FAST-REGISTRATION VALIDATION. WITHOUT CONFIRM PSW. 
-====================================================== */
-$("#fast-reg").submit(function(e) {
-    e.preventDefault();
-    var data = {
-        email: $("#fast-email").val(),
-        password: $("#fast-password").val()
-    };
+        var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
 
-    if ( isValidEmail(data['email']) && (data['password'].length > 1)) {
-        $.ajax({
-            type: "POST",
-            url: "assets/php/subscribe.php",
-            data: data,
-            success: function() {
-                $('.fast-success').fadeIn(1000);
-                $('.fast-failed').fadeOut(500);
-            }
-        });
-    } else {
-        $('.fast-failed').fadeIn(1000);
-        $('.fast-success').fadeOut(500);
+        return pattern.test(emailAddress);
+
     }
 
-    return false;
-});
+    /* ==========================================
+       LOCAL NEWSLETTER
+    ============================================= */
+    $("#subscribe").submit(function (e) {
+        e.preventDefault();
+        var data = {
+            email: $("#s-email").val()
+        };
 
-/* =======================================================================
-   DOUGHNUT CHART
-========================================================================== */
-var isdonut = 0;
-        
-$('.start-charts').waypoint(function(direction){
-    if (isdonut == 1){}
+        if (isValidEmail(data['email'])) {
+            $.ajax({
+                type: "POST",
+                url: "assets/php/subscribe.php",
+                data: data,
+                success: function () {
+                    $('.subscription-success').fadeIn(1000);
+                    $('.subscription-failed').fadeOut(500);
+                }
+            });
+        } else {
+            $('.subscription-failed').fadeIn(1000);
+            $('.subscription-success').fadeOut(500);
+        }
+
+        return false;
+    });
+
+    /* ============================
+       LOGIN-MODAL VALIDATION.
+    =============================== */
+    $("#login-modal").submit(function (e) {
+        e.preventDefault();
+        var data = {
+            password: $("#lm-password").val(),
+            email: $("#lm-email").val()
+        };
+
+        if (isValidEmail(data['email']) && (data['password'].length > 1)) {
+            $.ajax({
+                type: "POST",
+                url: "assets/php/subscribe.php",
+                data: data,
+                success: function () {
+                    $('.lm-success').fadeIn(1000);
+                    $('.lm-failed').fadeOut(500);
+                }
+            });
+        } else {
+            $('.lm-failed').fadeIn(1000);
+            $('.lm-success').fadeOut(500);
+        }
+
+        return false;
+    });
+
+
+    /* ===========================================
+       SIGNUP-MODAL VALIDATION. WITH CONFIRM PSW.
+    ============================================== */
+    $("#signup-modal").submit(function (e) {
+        e.preventDefault();
+        var data = {
+            password: $("#sm-password").val(),
+            email: $("#sm-email").val(),
+            pswconfirm: $("#sm-confirm").val()
+        };
+
+        if (isValidEmail(data['email']) && (data['password'].length > 1) && (data['password'].match(data['pswconfirm']))) {
+            $.ajax({
+                type: "POST",
+                url: "assets/php/subscribe.php",
+                data: data,
+                success: function () {
+                    $('.sm-success').fadeIn(1000);
+                    $('.sm-failed').fadeOut(500);
+                }
+            });
+        } else {
+            $('.sm-failed').fadeIn(1000);
+            $('.sm-success').fadeOut(500);
+        }
+
+        return false;
+    });
+
+    /* ================================================
+       SIGNUP-DIVIDER VALIDATION. WITHOUT CONFIRM PSW.
+    =================================================== */
+    $("#signup-divider").submit(function (e) {
+        e.preventDefault();
+        var data = {
+            email: $("#signup-email").val(),
+            password: $("#signup-password").val()
+        };
+
+        if (isValidEmail(data['email']) && (data['password'].length > 1)) {
+            $.ajax({
+                type: "POST",
+                url: "assets/php/subscribe.php",
+                data: data,
+                success: function () {
+                    $('.signup-success').fadeIn(1000);
+                    $('.signup-failed').fadeOut(0);
+                }
+            });
+        } else {
+            $('.signup-failed').fadeIn(1000);
+            $('.signup-success').fadeOut(500);
+        }
+
+        return false;
+    });
+
+    /* ===================================================
+       FAST-REGISTRATION VALIDATION. WITHOUT CONFIRM PSW.
+    ====================================================== */
+    $("#fast-reg").submit(function (e) {
+        e.preventDefault();
+        var data = {
+            email: $("#fast-email").val(),
+            password: $("#fast-password").val()
+        };
+
+        if (isValidEmail(data['email']) && (data['password'].length > 1)) {
+            $.ajax({
+                type: "POST",
+                url: "assets/php/subscribe.php",
+                data: data,
+                success: function () {
+                    $('.fast-success').fadeIn(1000);
+                    $('.fast-failed').fadeOut(500);
+                }
+            });
+        } else {
+            $('.fast-failed').fadeIn(1000);
+            $('.fast-success').fadeOut(500);
+        }
+
+        return false;
+    });
+
+    /* =======================================================================
+       DOUGHNUT CHART
+    ========================================================================== */
+    var isdonut = 0;
+
+    $('.start-charts').waypoint(function (direction) {
+        if (isdonut == 1) {
+        }
         else {
             var doughnutData = [
                 {
                     value: 50,
-                    color:"#C0392B",
+                    color: "#C0392B",
                     highlight: "#EA402F",
                     label: "Beautiful Design"
                 },
@@ -527,7 +554,7 @@ $('.start-charts').waypoint(function(direction){
             var doughnut2Data = [
                 {
                     value: 827,
-                    color:"#C0392B",
+                    color: "#C0392B",
                     highlight: "#EA402F",
                     label: "Cups of Coffee"
                 },
@@ -551,49 +578,49 @@ $('.start-charts').waypoint(function(direction){
                 }
             ];
 
-            
-            
+
             var ctx = document.getElementById("chart-area").getContext("2d");
-            window.myDoughnut = new Chart(ctx).Doughnut(doughnutData, {responsive : false});
+            window.myDoughnut = new Chart(ctx).Doughnut(doughnutData, {responsive: false});
 
             var ctx = document.getElementById("chart2-area").getContext("2d");
-            window.myDoughnut = new Chart(ctx).Doughnut(doughnut2Data, {responsive : false});
+            window.myDoughnut = new Chart(ctx).Doughnut(doughnut2Data, {responsive: false});
 
             isdonut = 1;
         }
-});
+    });
 
-/* =======================================================================
-   LINE CHART
-========================================================================== */
-var isline = 0;
-        
-$('.start-line').waypoint(function(direction){
-    if (isline == 1){}
+    /* =======================================================================
+       LINE CHART
+    ========================================================================== */
+    var isline = 0;
+
+    $('.start-line').waypoint(function (direction) {
+        if (isline == 1) {
+        }
         else {
 
             var lineChartData = {
-                labels : ["January","February","March","April","May","June","July"],
-                datasets : [
+                labels: ["January", "February", "March", "April", "May", "June", "July"],
+                datasets: [
                     {
                         label: "My First dataset",
-                        fillColor : "rgba(192,57,43,0.2)",
-                        strokeColor : "rgba(192,57,43,1)",
-                        pointColor : "rgba(192,57,43,1)",
-                        pointStrokeColor : "#fff",
-                        pointHighlightFill : "#fff",
-                        pointHighlightStroke : "rgba(192,57,43,1)",
-                        data : [10,20,20,15,25,37,32]
+                        fillColor: "rgba(192,57,43,0.2)",
+                        strokeColor: "rgba(192,57,43,1)",
+                        pointColor: "rgba(192,57,43,1)",
+                        pointStrokeColor: "#fff",
+                        pointHighlightFill: "#fff",
+                        pointHighlightStroke: "rgba(192,57,43,1)",
+                        data: [10, 20, 20, 15, 25, 37, 32]
                     },
                     {
                         label: "My Second dataset",
-                        fillColor : "rgba(50,58,69,0.2)",
-                        strokeColor : "rgba(50,58,69,1)",
-                        pointColor : "rgba(50,58,69,1)",
-                        pointStrokeColor : "#fff",
-                        pointHighlightFill : "#fff",
-                        pointHighlightStroke : "rgba(50,58,69,1)",
-                        data : [20,23,33,57,74,81,96]
+                        fillColor: "rgba(50,58,69,0.2)",
+                        strokeColor: "rgba(50,58,69,1)",
+                        pointColor: "rgba(50,58,69,1)",
+                        pointStrokeColor: "#fff",
+                        pointHighlightFill: "#fff",
+                        pointHighlightStroke: "rgba(50,58,69,1)",
+                        data: [20, 23, 33, 57, 74, 81, 96]
                     }
                 ]
 
@@ -604,11 +631,11 @@ $('.start-line').waypoint(function(direction){
 
             isline = 1;
         }
-});
+    });
 
-/* =======================================================================
-   SIGNUP-DIVIDER ANIMATED POLYGON BACKGROUND
-========================================================================== */
+    /* =======================================================================
+       SIGNUP-DIVIDER ANIMATED POLYGON BACKGROUND
+    ========================================================================== */
     var container = document.getElementById('canvas-bg');
     var renderer = new FSS.CanvasRenderer();
     var scene = new FSS.Scene();
@@ -619,39 +646,39 @@ $('.start-line').waypoint(function(direction){
     var now, start = Date.now();
 
     function initialise() {
-      scene.add(mesh);
-      scene.add(light);
-      container.appendChild(renderer.element);
-      window.addEventListener('resize', resize);
+        scene.add(mesh);
+        scene.add(light);
+        container.appendChild(renderer.element);
+        window.addEventListener('resize', resize);
     }
 
     function resize() {
-      renderer.setSize(container.offsetWidth, container.offsetHeight);
+        renderer.setSize(container.offsetWidth, container.offsetHeight);
     }
 
     function animate() {
-      now = Date.now() - start;
-      light.setPosition(300*Math.sin(now*0.001), 200*Math.cos(now*0.0005), 60);
-      renderer.render(scene);
-      requestAnimationFrame(animate);
+        now = Date.now() - start;
+        light.setPosition(300 * Math.sin(now * 0.001), 200 * Math.cos(now * 0.0005), 60);
+        renderer.render(scene);
+        requestAnimationFrame(animate);
     }
 
     initialise();
     resize();
     animate();
 
-/* ===========================================================
-   BOOTSTRAP FIX FOR IE10 in Windows 8 and Windows Phone 8  
-============================================================== */
-if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
-    var msViewportStyle = document.createElement('style');
-    msViewportStyle.appendChild(
-        document.createTextNode(
-            '@-ms-viewport{width:auto!important}'
+    /* ===========================================================
+       BOOTSTRAP FIX FOR IE10 in Windows 8 and Windows Phone 8
+    ============================================================== */
+    if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+        var msViewportStyle = document.createElement('style');
+        msViewportStyle.appendChild(
+            document.createTextNode(
+                '@-ms-viewport{width:auto!important}'
             )
         );
-    document.querySelector('head').appendChild(msViewportStyle);
-}
+        document.querySelector('head').appendChild(msViewportStyle);
+    }
 
 
 });

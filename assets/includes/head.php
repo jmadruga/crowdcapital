@@ -17,13 +17,13 @@
     <link rel="stylesheet" href="assets/css/icons/icons.min.css">
      
     <!-- GOOGLE FONTS -->
-    <link href="http://fonts.googleapis.com/css?family=Raleway:300,400,600,700%7COpen+Sans:300,400,600,700%7CHandlee" rel="stylesheet">
+    <link href="assets/css/google-fonts.css" rel="stylesheet">
     
     <!-- PLUGINS STYLESHEET -->
     <link rel="stylesheet" href="assets/css/plugins/plugins.min.css">
     
     <!-- CUSTOM STYLESHEET -->
-    <link rel="stylesheet" href="assets/css/style2.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
     <!-- RESPONSIVE FIXES -->
     <link rel="stylesheet" href="assets/css/responsive.css">
