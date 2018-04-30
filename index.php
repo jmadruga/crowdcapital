@@ -192,23 +192,18 @@
     <div style="width: 100%; background-color:#eff2f6;">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 boxes" id="box1_dono" style="text-align:center">
-                    <div><img src="assets/images/icons/money.png" style=" margin-top:10px; height:80px" alt=""
+                <div class="col-md-4 boxes" id="box1_dono" style="text-align:center">
+                    <div><img src="assets/images/icons/ideias.png" style=" margin-top:10px; height:70px" alt=""
                               class="img-responsive  center-block"/></div>
                     <h5>Seja Dono</h5>
                 </div>
-                <div class="col-md-3 boxes" id="box1_trabalhe" style="text-align:center">
+                <div class="col-md-4 boxes" id="box1_aproveite" style="text-align:center">
                     <div><img src="assets/images/icons/vagas.png" style=" margin-top:10px; height:70px" alt=""
-                              class="img-responsive  center-block"/></div>
-                    <h5>Trabalhe</h5>
-                </div>
-                <div class="col-md-3 boxes" id="box1_aproveite" style="text-align:center">
-                    <div><img src="assets/images/icons/ideias.png" style=" margin-top:10px; height:70px" alt=""
                               class="img-responsive  center-block"/></div>
                     <h5>Aproveite</h5>
                 </div>
-                <div class="col-md-3 boxes" id="box1_prospere" style="text-align:center">
-                    <div><img src="assets/images/icons/clube.png" style=" margin-top:10px; height:70px" alt=""
+                <div class="col-md-4 boxes" id="box1_prospere" style="text-align:center">
+                    <div><img src="assets/images/icons/money.png" style=" margin-top:10px; height:70px" alt=""
                               class="img-responsive  center-block"/></div>
                     <h5>Prospere</h5>
                 </div>
@@ -219,7 +214,7 @@
         <div class="container">
             <div class="row" id="box_dono">
                 <div class="col-md-4" style="text-align:center">
-                    <div><img src="assets/images/icons/money.png" style=" margin-top:10px; height:230px" alt=""
+                    <div><img src="assets/images/icons/ideias.png" style=" margin-top:10px; height:230px" alt=""
                               class="img-responsive  center-block"/></div>
                     <br/>
                     <h3 style="font-family:GothamBold;color:#353131">SEJA DONO</h3>
@@ -258,7 +253,7 @@
             </div>
             <div class="row" id="box_aproveite">
                 <div class="col-md-4" style="text-align:center">
-                    <div><img src="assets/images/icons/ideias.png" style=" margin-top:10px; height:230px" alt=""
+                    <div><img src="assets/images/icons/vagas.png" style=" margin-top:10px; height:230px" alt=""
                               class="img-responsive  center-block"/></div>
                     <br/>
                     <h3 style="font-family:GothamBold;color:#353131">Aproveite</h3>
@@ -278,7 +273,7 @@
             </div>
             <div class="row" id="box_prospere">
                 <div class="col-md-4" style="text-align:center">
-                    <div><img src="assets/images/icons/clube.png" style=" margin-top:10px; height:230px" alt=""
+                    <div><img src="assets/images/icons/money.png" style=" margin-top:10px; height:230px" alt=""
                               class="img-responsive  center-block"/></div>
                     <br/>
                     <h3 style="font-family:GothamBold;color:#353131">Prospere</h3>
@@ -313,22 +308,18 @@
                                         <input id="nome" name="nome" type="text" placeholder="Nome"
                                                class="form-control input-md" required="">
                                     </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
+                                                    <div class="form-group">
+                                       <div class="form-group">
                                         <label class="control-label" for="telefone">Telefone</label>
                                         <input id="telefone" name="telefone" type="text" placeholder="DDD"
                                                class="form-control input-md" style="width: 82px;">
                                         <input id="telefone" name="telefone" type="text" placeholder="Telefone"
                                                class="form-control input-md" style="width: 72%;"></div>
-                                </div>
-                            </div>
-                            <div class="table-row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
                                         <label class="control-label" for="data">E-mail</label>
                                         <input id="email" name="email" type="text" placeholder="E-mail"
-                                               class="form-control input-md"><br /><br />
+                                               class="form-control input-md">
+                                     </div>
+                                        
                                         <div class="form-group">
                                             <label class="control-label" for="checkboxes"><b>Marque interesses na CC (1 ou
                                                     mais):</b></label>
@@ -396,8 +387,6 @@
                                                 </label>
                                             </div>
                                         </div>
-                                    </div>
-
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group" style="color:white">
@@ -431,11 +420,20 @@
                                             </label>
                                         </div>
                                     </div>
+                            </div>
+                            <div class="table-row">
+                                <div class="col-md-6">
+                    
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6">
+
                                 </div>
                             </div>
                             <div class="form-group" align="center">
                                 <label class="ontrol-label" for="enviar"></label>
-                                <button id="enviar" name="enviar" class="btn btn-pink">Enviar</button>
+                                <button id="enviar" name="enviar" class="btn btn-green" style="width: 201px;font-size: 20px;">Enviar</button>
                             </div>
                         </fieldset>
                     </form>

@@ -60,20 +60,6 @@ foreach ($xml->channel->item as $item) {
             <div class="row">
                 <div class="col-md-4">
                     <div class="serviceBox box_medium" id="box">
-                        <a href="comofunciona.php" target="_blank">
-                            <img src="assets/images/como-funciona.png" class="img_chamada" />
-                        </a>
-                        <div class="row texto_box">
-                            <div class="col-md-12">
-                                <h4>Regras de funcionamento</h4>
-                                <p>Para facilitar e aumentar as chances de sucesso desse projeto, recorreremos às estratégias Startups e focaremos em manter a operação sempre o mais enxuta possível...
-                                    <a href="comofunciona.php" target="_blank">Leia Mais</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="serviceBox box_medium" id="box">
                         <a href="oquee.php" target="_blank">
                             <img src="assets/images/o-que-e.png" class="img_chamada" />
                         </a>
@@ -82,6 +68,20 @@ foreach ($xml->channel->item as $item) {
                                 <h4> O que é a Crowdcapital</h4>
                                 <p>A Crowdcapital (CC) é formalmente uma cooperativa de empreendedorismo, onde um coletivo de pessoas mobiliza recursos pulverizados visando...
                                     <a href="oquee.php" target="_blank">Leia Mais</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="serviceBox box_medium" id="box">
+                        <a href="comofunciona.php" target="_blank">
+                            <img src="assets/images/como-funciona.png" class="img_chamada" />
+                        </a>
+                        <div class="row texto_box">
+                            <div class="col-md-12">
+                                <h4>Regras de funcionamento</h4>
+                                <p>Para facilitar e aumentar as chances de sucesso desse projeto, recorreremos às estratégias Startups e focaremos em manter a operação sempre o mais enxuta possível...
+                                    <a href="comofunciona.php" target="_blank">Leia Mais</a></p>
                             </div>
                         </div>
                     </div>
@@ -104,8 +104,7 @@ foreach ($xml->channel->item as $item) {
             </div>
             <div class="row" align="center" style="margin-top: 30px">
                 <div class="col-md-12">
-                    <h4  style=" font-family:GothamBold">Qualquer outra dúvida que tiver, é só escrever pra gente.<br />
-                        Vai ser um prazer falar com você.</h4>
+                    <h4  style=" font-family:GothamBold">Artigos para refletir e compartilhar.</h4>
                 </div>
             </div>
             <?php
