@@ -17,6 +17,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    border: 12px #e0e0e0 solid;
 }
 .progress > span{
     width: 50%;
