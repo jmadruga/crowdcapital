@@ -110,7 +110,7 @@ foreach ($xml->channel->item as $item) {
             <?php
                 for($i=0;$i<count($medium);$i++) {
                     if(isset($medium[$i])) {
-                        echo ' <div class="row" style="margin: 30px;">';
+                        echo ' <div class="row" style="margin: 30px;    margin-bottom: 0px;">';
                         for ($f = 0; $f <= 3; $f++) {
                             if (isset($medium[$i])) {
                                 echo '
@@ -134,6 +134,15 @@ foreach ($xml->channel->item as $item) {
                     }
                 }
             ?>
+            <div class="row" style="margin-bottom:15px;">
+                <div class="col-md-4">
+                </div>
+                <div class="btn btn-info col-md-4">
+                    <a href="https://medium.com/@felipeflat" target="_blank" style="font-size:17px">Veja outros artigos</a>
+                </div>
+                <div class="col-md-4">
+                </div>
+            </div>
         </div>
     </content>
 		
