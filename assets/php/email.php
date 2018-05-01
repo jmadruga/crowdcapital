@@ -60,5 +60,5 @@ $headers .= 'From: <webmaster@crowdcapital.com.br>' . "\r\n";
 
 
 mail($to, $subject, $message, $headers);
-header('Location: http://www.crowdcapital.com.br/index.html?e=1');
+header('Location: http://www.crowdcapital.com.br/index.php?e=1');
 ?> 
