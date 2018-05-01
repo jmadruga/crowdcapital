@@ -84,7 +84,7 @@
                         <ul id="thumbnails" style="height: 485px;">
                             <li>
                                 <div class="faixa">
-                                    #sejacrowdcapital
+                                    Aposentadoria antecipada
                                 </div>
                                 <div class="serviceBox">
 
@@ -98,7 +98,7 @@
 
                             <li>
                                 <div class="faixa">
-                                    Explore todo seu potencial
+                                    Empreenda sem riscos
                                 </div>
                                 <div class="serviceBox">
 
@@ -112,7 +112,7 @@
 
                             <li>
                                 <div class="faixa">
-                                    Obtenha paz de espírito
+                                    Explore todo seu potencial
                                 </div>
                                 <div class="serviceBox">
                                     <div><img src="assets/images/icons/tempo-ocioso.png"
@@ -126,7 +126,7 @@
 
                             <li>
                                 <div class="faixa">
-                                    Aposentadoria antecipada
+                                    Obtenha paz de espírito
                                 </div>
                                 <div class="serviceBox">
 
@@ -192,21 +192,27 @@
     <div style="width: 100%; background-color:#eff2f6;">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 boxes" id="box1_dono" style="text-align:center">
+                <div class="col-md-3 boxes" id="box1_dono" style="text-align:center">
                     <div><img src="assets/images/icons/ideias.png" style=" margin-top:10px; height:70px" alt=""
                               class="img-responsive  center-block"/></div>
                     <h5>Seja Dono</h5>
                 </div>
-                <div class="col-md-4 boxes" id="box1_aproveite" style="text-align:center">
+               <div class="col-md-3 boxes" id="box1_trabalhe" style="text-align:center">
                     <div><img src="assets/images/icons/vagas.png" style=" margin-top:10px; height:70px" alt=""
+                              class="img-responsive  center-block"/></div>
+                    <h5>Trabalhe</h5>
+                </div>
+                <div class="col-md-3 boxes" id="box1_aproveite" style="text-align:center">
+                    <div><img src="assets/images/icons/gift.png" style=" margin-top:10px; height:70px" alt=""
                               class="img-responsive  center-block"/></div>
                     <h5>Aproveite</h5>
                 </div>
-                <div class="col-md-4 boxes" id="box1_prospere" style="text-align:center">
+                <div class="col-md-3 boxes" id="box1_prospere" style="text-align:center">
                     <div><img src="assets/images/icons/money.png" style=" margin-top:10px; height:70px" alt=""
                               class="img-responsive  center-block"/></div>
                     <h5>Prospere</h5>
                 </div>
+
             </div>
         </div>
     </div>
@@ -253,7 +259,7 @@
             </div>
             <div class="row" id="box_aproveite">
                 <div class="col-md-4" style="text-align:center">
-                    <div><img src="assets/images/icons/vagas.png" style=" margin-top:10px; height:230px" alt=""
+                    <div><img src="assets/images/icons/gift.png" style=" margin-top:10px; height:230px" alt=""
                               class="img-responsive  center-block"/></div>
                     <br/>
                     <h3 style="font-family:GothamBold;color:#353131">Aproveite</h3>
