@@ -3,7 +3,7 @@ $to      = 'felipe@crowdcapital.com.br';
 $subject = 'Nova aplicação pelo formulário';
 $q1 = $_POST['checkboxes'];
 $q2 = $_POST['feliz'];
-
+$telefone = $_POST['ddd'].$_POST['telefone'];
 
 $message = '
 <table style="border:1px solid black">
@@ -17,10 +17,10 @@ $message = '
 </tr>
 <tr>
 <td>
-<b>Data:</b>
+<b>Email:</b>
 </td>
 <td>
-'. $_POST['data']. '
+'. $_POST['email']. '
 </td>
 </tr>
 <tr>
@@ -28,15 +28,7 @@ $message = '
 <b>Telefone: </b>
 </td>
 <td>
-'.$_POST['telefone'].'
-</td>
-</tr>
-<tr>
-<td>
-<b>Cidade:</b> 
-</td>
-<td>
-'.$_POST['cidade'].'
+'.$telefone.'
 </td>
 </tr>';
 $message .= " <tr>

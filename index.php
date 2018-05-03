@@ -317,7 +317,7 @@
                                                     <div class="form-group">
                                        <div class="form-group">
                                         <label class="control-label" for="telefone">Telefone</label>
-                                        <input id="telefone" name="telefone" type="text" placeholder="DDD"
+                                        <input id="ddd" name="ddd" type="text" placeholder="DDD"
                                                class="form-control input-md" style="width: 82px;">
                                         <input id="telefone" name="telefone" type="text" placeholder="Telefone"
                                                class="form-control input-md" style="width: 72%;"></div>
