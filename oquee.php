@@ -17,7 +17,7 @@
     <div class="container   " style="z-index:1;">
         <div class="row" id="" style="z-index:1;">
             <div class="col-md-2"></div>
-            <div class="col-md-8" style="margin-top: 15px; height: 37000px">
+            <div class="col-md-8" style="margin-top: 15px; height: 19600px">
                 <iframe style="width: 100%; height: 100%; border:none" src="https://docs.google.com/document/d/e/2PACX-1vTukCqtFOaCa2vHEm6TwZFxyVK30uAKEpEH_ZaWw114DISbL7xZSlw-8RDEAEfkMV6-pgFAZKIC_Hf4/pub?embedded=true"></iframe>
             </div>
             <div class="col-md-2"></div>

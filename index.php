@@ -23,17 +23,17 @@
             <div class="container">
                 <div class="row" style="margin-top:50px;">
                     <div class="col-md-4 col-xs-10 col-sm-10">
-                        <a href="#top" class="  scrollto" title="Crowd Capital">
+                        <a href="#top" class="  scrollto" >
                             <img class="img-logo" src="assets/images/logos/logocccolor.png" alt="Logo">
                         </a>
                     </div>
                     <div class="col-md-3 hidden-xs hidden-sm">
-                        <a href="#motivos" class="navbar-brand scrollto" title="comoFunciona">
+                        <a href="#motivos" class="navbar-brand scrollto">
                             Motivos para fazer parte
                         </a>
                     </div>
                     <div class="col-md-2 hidden-xs hidden-sm">
-                        <a href="#comoFunciona" class="navbar-brand scrollto" title="comoFunciona">
+                        <a href="#comoFunciona" class="navbar-brand scrollto" >
                             Como Funciona
                         </a>
                     </div>
@@ -42,7 +42,7 @@
                     </div>
                     <div class="col-md-2 hidden-xs hidden-sm">
                         <div class="navbar-header">
-                            <a href="saibamais" class="navbar-brand scrollto" title="mais">
+                            <a href="saibamais" class="navbar-brand scrollto">
                                 Saiba Mais
                             </a>
                         </div>
@@ -180,7 +180,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12">
-                            <p style="color:#353131;font-family:GothamLight;">A Crowdcapital é uma pulverizadora de
+                            <p style="color:#353131;font-family:GothamLight;">A Crowdcapital é uma cooperativa pulverizadora de
                                 riscos. Isso significa que unimos a força <br/> de muitas pessoas para que juntas possam
                                 superar desafios que nunca <br/>consequiriam sozinhas.</p>
                         </div>
@@ -303,13 +303,16 @@
         <div class="container">
             <div class="row" id="apliquese">
                 <div class="col-md-12 col-xs-12 col-lg-12 col-sm-12">
-                    <h1 style="font-family:GothamBold;color:white">Aplique-se</h1><br/>
+                    <h1 style="font-family:GothamBold;color:white">Aplique-se e fale conosco!</h1><br/>
+                    <h4 style="text-align: left;color: white;">Estão abertas as vagas para membros fundadores</h4>
+                    <b style="color: white;">Previsão de lançamento ao público: Março de 2019</b><br><br>
                     <form action="assets/php/email.php" method="post">
                         <fieldset>
 
                             <div class="table-row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
+                            <div class="col-md-6"></div>
+                            <div class="col-md-6"> 
+                                <div class="form-group">
                                         <label class="control-label" for="nome">Nome Completo</label>
                                         <input id="nome" name="nome" type="text" placeholder="Nome"
                                                class="form-control input-md" required="">
@@ -324,7 +327,9 @@
                                         <label class="control-label" for="data">E-mail</label>
                                         <input id="email" name="email" type="text" placeholder="E-mail"
                                                class="form-control input-md">
-                                     </div>
+                                     </div></div>
+                                <div class="col-md-6">
+                                   
                                         
                                         <div class="form-group">
                                             <label class="control-label" for="checkboxes"><b>Marque interesses na CC (1 ou
@@ -439,7 +444,7 @@
                             </div>
                             <div class="form-group" align="center">
                                 <label class="ontrol-label" for="enviar"></label>
-                                <button id="enviar" name="enviar" class="btn btn-green" style="width: 201px;font-size: 20px;">Enviar</button>
+                                <button id="enviar" name="enviar" class="btn btn-green" style="width: 201px;font-size: 20px;">Me Aplicar</button>
                             </div>
                         </fieldset>
                     </form>

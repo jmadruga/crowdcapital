@@ -29,7 +29,7 @@
 					</div>
 					<div class="row" style="padding: 5px;">
 						<div class="col-md-12">
-							<a href="index#apliquese" class="btn btn-pink scrollto" style="font-family:GothamBold;">QUERO ME APLICAR</a>
+							<a href="index#apliquese" class="btn btn-pink scrollto" style="font-family:GothamBold;">QUERO APLICAR</a>
 						</div>
 					</div>	 			
 				</div>

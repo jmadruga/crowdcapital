@@ -50,14 +50,21 @@ foreach ($xml->channel->item as $item) {
 			
 			<div class="container">
         <div class="col-md-12">
-            <h2  style="text-align: left; font-family:GothamBold">Saiba Mais</h2>
+            <h2  style="text-align: left; font-family:GothamBold">Aplique-se e saiba mais</h2>
             <p>Que legal que você se interessou em saber mais sobre o CrowdCapital. Aqui vão alguns textos que
             com certeza irão te ajudar a entender melhor o nosso propósito.</p>
         </div>
     </div>
+    
     <content class="content" id="main">
-        <div class="container" style="z-index:1;">
-            <div class="row">
+        <div class="container" style="z-index:1; ">
+            <div class="row" style="text-align:center;height: 600px">
+                <div class="col-md-12">
+                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vT9Hsd5-mVfmvwrRXCtemiAoALcZlPPcZWY1LezMySuSYbn0kFOtZxNT6sLhZ44J2mOkFII_4ZAtVtT/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                </div>            
+            </div>
+         
+            <div class="row">                
                 <div class="col-md-4">
                     <div class="serviceBox box_medium" id="box">
                         <a href="oquee.php" target="_blank">

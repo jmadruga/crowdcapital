@@ -30,7 +30,7 @@
 					</div>
 					<div class="row" style="padding: 5px;">
 						<div class="col-md-12" align="center">
-							<a href="index#apliquese" class="btn btn-pink scrollto" style="font-family:GothamBold;">QUERO ME APLICAR MINHA IDEIA</a>
+							<a href="index#apliquese" class="btn btn-pink scrollto" style="font-family:GothamBold;">QUERO APLICAR MINHA IDEIA</a>
 						</div>
 					</div>	 			
 				</div>
